@@ -1,4 +1,4 @@
-<?php 
+<?php
   if(!empty($bannerRes)){
     foreach($bannerRes as $banner){
       $banner_url= $base_url."files/banner/".$banner['Banner']['banner_img'];
@@ -12,18 +12,18 @@
 <div class="banner" style=" background: url(<?php echo $banner_url;?>) no-repeat center top;">
     <div class="container">
         <div class="row">
-          <div class="bannertext_bottom"> 
+          <div class="bannertext_bottom">
             <div class="col-md-9 col-sm-12 col-xs-12">
-            
+
                 <div class="bannertext">
                     <h2>Medical Services That You Can Trust</h2>
-                    <p>Qualified Staff With Expertise in Services We Offer for more Resonable cost with love, Just explore about More!</p>
+                    <p>Qualified Staff With Expertise in Services We Offer for more Resonable cost with love, Just explore More!</p>
                 </div>
-                
+
             </div>
         </div>
-      <?php if(!$this->Session->check('loginID')){?>  
-      
+      <?php if(!$this->Session->check('loginID')){?>
+
         <div class="col-md-5 col-sm-12 col-xs-12 pull-right">
           <div class="memberlogin">
               <div class="memberlogin_title">Consult A Doctor</div>
@@ -35,7 +35,7 @@
                       <li>
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                            <td width="76%" align="left" valign="middle">Don’t have account ? 
+                            <td width="76%" align="left" valign="middle">Don’t have account ?
                               <a href="<?php echo $base_url;?>registers">
                               register here
                               </a></td>
@@ -50,8 +50,8 @@
                   </div>
               </div>
           </div>
-          
-       <?php }?>   
+
+       <?php }?>
         </div>
     </div>
 </div>
