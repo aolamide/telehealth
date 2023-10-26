@@ -17,7 +17,7 @@
  */
 
 //$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-$cakeDescription = __d('cake_dev', 'Car parts for your car.YOU choose the Price! PieseAuto.ro');
+$cakeDescription = __d('cake_dev', 'TeleHealth');
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,40 +27,40 @@ $cakeDescription = __d('cake_dev', 'Car parts for your car.YOU choose the Price!
 		<?php echo $cakeDescription; ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
-	<?php		
+	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('cake.generic');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
-		echo $this->Html->css('style'); 
+		echo $this->Html->css('style');
 		echo $this->Html->css('jquery.autocomplete');
-		echo $scripts_for_layout; 
+		echo $scripts_for_layout;
 	?>
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php 
-					echo $this->element('header'); 
-					//echo $this->Html->link($cakeDescription, 'http://cakephp.org'); 
+			<h1><?php
+					echo $this->element('header');
+					//echo $this->Html->link($cakeDescription, 'http://cakephp.org');
 				?></h1>
 		</div>
 		<div id="content">
 
-			
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			<?php 
+			<?php
 				echo $this->Element('footer');
 				//echo $this->Html->link($this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
 					//'http://www.cakephp.org/',
