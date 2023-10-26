@@ -1,0 +1,168 @@
+
+.clearout {
+height:20px;
+clear:both;
+}
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+display:none;
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:99999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width:100%;
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    position:relative;
+    line-height:0px;
+	
+	text-align:left;
+}
+.nbs-flexisel-item img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+/*    max-width:100px;
+    max-height:45px;
+*/
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+}
+
+.nbs-flexisel-item .textareabox {
+margin:0px;
+padding:10px 10px 10px 10px !important;
+display:block!important;
+float: left;
+width:100%;
+background-color:#FFFFFF;
+}
+
+.nbs-flexisel-item .textareabox h3 {
+font-size:28px;
+line-height:32px;
+margin:10px 0px 0px 0px !important; color:#7f7f7f;
+padding:0px 1px 10px 10px !important;
+
+}
+.nbs-flexisel-item .textareabox p {
+font-size:16px;
+line-height:24px;
+margin:0px;color:#7f7f7f;
+min-height:100px;
+padding:0px 10px 10px 10px !important;
+}
+
+
+.nbs-flexisel-item .textareabox a {
+display:block;
+text-align:right;
+}
+
+
+
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 22px;
+    height: 32px; 
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0.3;
+}
+
+.nbs-flexisel-nav-left {
+    left: -40px;
+    background: url(../images/seta-esq.png) no-repeat;
+}
+
+.nbs-flexisel-nav-right {
+    right: -30px;
+    background: url(../images/seta-dir.png) no-repeat;
+}
+
+.nbs-flexisel-nav-left:hover,
+.nbs-flexisel-nav-right:hover {
+    opacity: 0.8;
+}
+
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+
+
+
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.nbs-flexisel-item .textareabox h3 {font-size: 21px;line-height: 25px;}
+.nbs-flexisel-item .textareabox p { font-size: 13px; line-height: 19px; min-height: 100px;}
+.allbtn2 {font-size: 13px;line-height: 18px;margin: 0 10px 0 0; padding: 7px 10px;}
+.nbs-flexisel-nav-left {left: -5px;}
+.nbs-flexisel-nav-right { right: 5px;}
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {top: 100px !important;}
+
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.nbs-flexisel-item .textareabox h3 {font-size: 21px;line-height: 25px;}
+.nbs-flexisel-item .textareabox p { font-size: 13px; line-height: 19px; min-height: auto;}
+.allbtn2 {font-size: 13px;line-height: 18px;margin: 0 10px 0 0; padding: 7px 10px;}
+
+.nbs-flexisel-nav-left {left: -5px;}
+.nbs-flexisel-nav-right { right: 5px;}
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {top: 100px !important;}
+
+
+
+
+}
+@media only screen and (max-width: 479px) {
+
+.nbs-flexisel-nav-left {left: -5px; background-color:#CCCCCC; background-position:center;}
+.nbs-flexisel-nav-right { right: 5px; background-color:#CCCCCC; background-position:center;}
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {top: 100px !important;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

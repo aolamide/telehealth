@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	id attribute - payment request identifier as it is stored on merchant site
+	should be unique for every seller account (signature value)
+	
+	timestamp attribute - timestamp of the payment request as it is stored on merchant site 
+ -->
+<order type="sms" id="string64" timestamp="YYYYmmddHHiiss">
+	<!-- 
+	signature element is mandatory
+	get signature value for every seller account from mobilpay.ro control panel  
+	-->
+	<signature>XXXX-XXXX-XXXX-XXXX-XXXX</signature>
+	<!-- 
+	service element is mandatory
+	get service value for every product/service from mobilpay.ro control panel  
+	-->
+	<service>000000-000000-000000</service>
+	<!-- 
+	url element is optional
+	create url element only if you want to overwrite either return or confirm url defined by you in mobilpay.ro control panel  
+	-->
+	<url>
+		<!-- 
+		return element is optional
+		create return element only if you want to overwrite return url defined by you in mobilpay.ro control panel  
+		-->
+		<return>http://www.site_propriu.com/return</return>
+		<!-- 
+		confirm element is optional
+		create confirm element only if you want to overwrite return url defined by you in mobilpay.ro control panel  
+		-->
+		<confirm>http://www.site_propriu.com/confirm</confirm>
+	</url>
+	<!-- msisdn element is optional  -->
+	<msisdn>07XXXXXXXX</msisdn>
+	<!-- 
+	params element is optional
+	create params element only if you want to send additional parameters
+	additional parameters will be sent in confirmation process
+	-->
+	<params>
+		<param>
+			<name>param1Name</name>
+			<value>param1Value</value>
+		</param>
+		<param>
+			<name>param2Name</name>
+			<value>param2Value</value>
+		</param>
+		<!-- ....... -->
+		<param>
+			<name>paramnName</name>
+			<value>paramnValue</value>
+		</param>
+	</params>
+	<!-- 
+	mobilpay element is added to the original XML you have sent
+	timestamp attribute is the timestamp of the mobilpay server and states the moment the payment has been validated on mobilpay's side
+	Your confirm url should reply in XML format, and the response must contain the crc value
+	-->
+	<mobilpay timestamp="20091013183144" crc="05e49494318c270914bb0e85175e45ce">
+		<!-- 	action element is always "confirmed"		-->
+	   <action>confirmed</action>
+	   <!--	purchase element is a numeric identifier for the mobilpay transaction	-->
+       <purchase>21</purchase>
+	   <!--	the error element and its attributes do not have any meaning for a SMS payment	-->
+       <error code="0"><![CDATA[Transaction approved]]></error>
+   </mobilpay>
+</order>

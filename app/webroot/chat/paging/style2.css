@@ -1,0 +1,48 @@
+/*Scott*/
+div.pagination {
+	padding:3px;
+	margin:3px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+}
+
+div.pagination a {
+	padding: 2px 5px;
+	margin-right: 3px;
+	text-decoration: none; 
+	color: #014c57;
+	border:1px solid #fff;
+}
+div.pagination a:hover, div.pagination a:active {
+	border:1px solid #014c57;
+	color: #fff;
+	background-color: #669fa7;
+}
+div.pagination span.current {
+	padding: 2px 5px 2px 5px;
+	margin-right: 3px;
+	border: 1px solid #027b8c;
+	font-weight: bold;
+	background-color: #027b8c; 
+	color: #FFF;
+}
+div.pagination span.disabled {
+	padding: 2px 5px 2px 5px;
+	margin-right: 3px;
+	border: 1px solid #f3f3f3;
+	color: #ccc;
+}
+div.pagination .prev{
+	color:#FFF;
+	padding: 2px 5px 2px 5px;
+	background-color: #027b8c;
+	border:1px solid #014c57;
+}
+div.pagination .next{
+	color:#FFF;
+	padding: 2px 5px 2px 5px;
+	background-color: #027b8c;
+	border:1px solid #014c57;
+}

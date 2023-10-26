@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>InHealth</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/tabpanel.css" /> 
+<link type="text/css" rel="stylesheet" href="css/responsive-tabs.css" /> 
+<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/latestnews_slider.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/search.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/responsivemultimenu.css" type="text/css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+<script type="text/javascript" src="js/responsivemultimenu.js"></script>
+
+
+
+
+<script src="js/jquery-scrolltofixed.js" type="text/javascript"></script>
+<script>
+$(document).ready(function() {
+
+	$('header').scrollToFixed();
+
+	var summaries = $('.summary');
+	summaries.each(function(i) {
+		var summary = $(summaries[i]);
+		var next = summaries[i + 1];
+
+		summary.scrollToFixed({
+			marginTop: $('header').outerHeight(true) + 10,
+			limit: function() {
+				var limit = 0;
+				if (next) {
+					limit = $(next).offset().top - $(this).outerHeight(true) - 10;
+				} else {
+					limit = $('.footer').offset().top - $(this).outerHeight(true) - 10;
+				}
+				return limit;
+			},
+			zIndex: 9999
+		});
+	});
+});
+</script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<!--===================================Header Section===================================-->
+
+
+<div class="topbar">
+	<div class="container">
+    	<div class="row">
+            <div class="col-md-6 col-sm-7 hidden-xs">
+            	<span class="header_right_tab"><i class="fa fa-phone"></i> Call Us <b>+522 234 56789</b></span>
+                <span class="header_right_tab"><i class="fa fa-envelope-o"></i> Email us <a href="#"><b>help@inhelp.com</b></a></span>
+            </div>
+            <div class="col-md-6 col-sm-5 hidden-xs socialmedia_top">
+            	<div class="socialmedia_iconstop"><span class="socialtest">Follow Us </span> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="google"><i class="fa fa-google-plus"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--===================================Logo Section===================================-->
+<header>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-3 col-sm-3 header_logo"><img src="images/inhealth_logo.png" alt="InHealth"></div>
+            
+            
+            <div class="col-md-8 col-sm-8 header_nav">
+            
+            
+                    <div class="rmm style">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="product.html">Products</a>
+                                <ul>
+                                    <li><a href="product.html">Products1</a></li>
+                                    <li><a href="product.html">Products2</a></li>
+                                    <li><a href="product.html">Products3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Telehealth Solutions</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                
+                
+            </div>
+            
+            <div class="col-md-1 col-sm-1 header_search">
+                <div class="searchpanel">
+                    	<form>
+                        	<input type="text" placeholder="Search..." class="form-control searchField">
+                            <btton type="submit" value="" class="btn searchBtn"  onclick="showsearchpan();"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </form>
+                    </div>
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+<!--===================================Banner Section===================================-->
+<div class="banner">
+    <div class="container">
+        <div class="row">
+
+
+
+		<div class="bannertext_bottom">	
+            <div class="col-md-9 col-sm-12 col-xs-12">
+            
+                <div class="bannertext">
+                    <h2>Medical Services That You Can Trust</h2>
+                    <p>Qualified Staff With Expertise in Services We Offer for more Resonable cost with love, Just explore about More!</p>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+        <div class="col-md-5 col-sm-12 col-xs-12 pull-right">
+        	<div class="memberlogin">
+            	<div class="memberlogin_title">Member Login</div>
+                <div class="memberlogin_bg">
+                	<ul>
+                    	<li><input name="" type="text" placeholder="Username" class="memberlogin_bg_forminputbox"></li>
+                        <li><input name="" type="text" placeholder="Password" class="memberlogin_bg_forminputbox"></li>
+                        <li><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="76%" align="left" valign="middle">Don’t have account ? 
+      <a href="#">
+      register here
+      </a></td>
+    <td width="24%" align="right" valign="middle">
+      <input type="submit" name="button" id="button" value="Login" class="allbtn3">    </td>
+  </tr>
+</table>
+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+       </div>
+    </div>
+</div>
+<!--===================================Service Section===================================-->
+<div class="homemidsection">
+    <div class="container">
+        <div class="row">
+        	
+           		<div class="col-md-4 col-sm-4 homemidsection_left">
+                	<h2>Tele Medecine</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <a href="#" class="allbtn1">view our services</a>
+                </div>
+                
+                
+                <div class="col-md-8 col-sm-8">
+                	<div class="row">
+                    	
+                        <div class="col-md-6"><div class=" homemidsection_right">
+                        	<span class="left"><img src="images/icon1.jpg" alt=""></span>
+							<span class="right">
+                            <h2>Rehabilitaion Center</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </span>
+                        </div></div>
+                        
+                        <div class="col-md-6"><div class=" homemidsection_right">
+                        	<span class="left"><img src="images/icon2.jpg" alt=""></span>
+							<span class="right">
+                            <h2>Medical Counseling</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </span>
+                        </div></div>
+                        
+                        <div class="col-md-6"><div class=" homemidsection_right">
+                        	<span class="left"><img src="images/icon3.jpg" alt=""></span>
+							<span class="right">
+                            <h2>Qualified Doctors</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </span>
+                        </div></div>
+                        
+                        <div class="col-md-6"><div class=" homemidsection_right">
+                        	<span class="left"><img src="images/icon4.jpg" alt=""></span>
+							<span class="right">
+                            <h2>Emergency Services</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </span>
+                        </div></div>
+                        
+                        
+                	</div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+<!--===================================Home Orange Tab===================================-->
+<div class="home_orange_tab">
+    <div class="container">
+        <div class="row">
+			
+            <div id="responsiveTabsDemo">
+        <ul>
+            <li><a href="#tab-1">TELEPSYCHIATRY</a></li>
+            <li><a href="#tab-2">TELEMEDICINE</a></li>
+            <li><a href="#tab-3">PATIENT PROGRAMS</a></li>
+            <li><a href="#tab-4">SECURITY</a></li>
+
+        </ul>
+
+
+     
+<!--==========Tab1================-->      
+<div id="tab-1">
+
+
+<div class="col-md-6 col-sm-6 padding"><img src="images/tabpics1.jpg" alt=""></div>
+<div class="col-md-6 col-sm-6">
+	<big>What is Telemedicine</big>
+	<p>Telepsychiatry connects psychiatrists and other mental health providers with their patients via online video sessions. With telepsychiatry, there is no need for either patient or physician to travel to an office. With CloudVisit's telepsychiatry platform, HIPAA-compliant video sessions can be done from anywhere – all you need is a broadband internet connection, computer or laptop, and a webcam. This convenience expands your availability and outreach</p><p>Telepsychiatry connects psychiatrists and other mental health providers with their patients via online video sessions. With telepsychiatry, there is no need for either patient or physician to travel to an office. </p>
+</div>
+
+
+</div>
+            
+            
+<!--==========Tab1================-->      
+<div id="tab-2">
+
+
+<div class="col-md-6 col-sm-6 padding"><img src="images/tabpics1.jpg" alt=""></div>
+<div class="col-md-6 col-sm-6">
+	<big>TELEMEDICINE</big>
+	<p>Telepsychiatry connects psychiatrists and other mental health providers with their patients via online video sessions. With telepsychiatry, there is no need for either patient or physician to travel to an office. With CloudVisit's telepsychiatry platform, HIPAA-compliant video sessions can be done from anywhere – all you need is a broadband internet connection, computer or laptop, and a webcam. This convenience expands your availability and outreach</p><p>Telepsychiatry connects psychiatrists and other mental health providers with their patients via online video sessions. With telepsychiatry, there is no need for either patient or physician to travel to an office. </p>
+</div>
+
+
+</div>
+
+
+<!--==========Tab1================-->      
+<div id="tab-3">
+
+
+<div class="col-md-6 col-sm-6 padding"><img src="images/tabpics1.jpg" alt=""></div>
+<div class="col-md-6 col-sm-6">
+	<big>PATIENT PROGRAMS</big>
+	<p>Telepsychiatry connects psychiatrists and other mental health providers with their patients via online video sessions. With telepsychiatry, there is no need for either patient or physician to travel to an office. With CloudVisit's telepsychiatry platform, HIPAA-compliant video sessions can be done from anywhere – all you need is a broadband internet connection, computer or laptop, and a webcam. This convenience expands your availability and outreach</p><p>Telepsychiatry connects psychiatrists and other mental health providers with their patients via online video sessions. With telepsychiatry, there is no need for either patient or physician to travel to an office. </p>
+</div>
+
+
+</div>
+
+
+<!--==========Tab1================-->      
+<div id="tab-4">
+
+
+<div class="col-md-6 col-sm-6 padding"><img src="images/tabpics1.jpg" alt=""></div>
+<div class="col-md-6 col-sm-6">
+	<big>SECURITY</big>
+	<p>Telepsychiatry connects psychiatrists and other mental health providers with their patients via online video sessions. With telepsychiatry, there is no need for either patient or physician to travel to an office. With CloudVisit's telepsychiatry platform, HIPAA-compliant video sessions can be done from anywhere – all you need is a broadband internet connection, computer or laptop, and a webcam. This convenience expands your availability and outreach</p><p>Telepsychiatry connects psychiatrists and other mental health providers with their patients via online video sessions. With telepsychiatry, there is no need for either patient or physician to travel to an office. </p>
+</div>
+
+
+</div>
+            
+
+    </div>
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+
+<!--===================================Latest News===================================-->
+
+<div class="latest_news">
+    <div class="container">
+        <div class="row">
+
+			<div class="latest_news_title"><div class="col-md-12">
+            	<h2>Latest News from <big>INHEALTH</big> <span style="color:#f26529">AGENCY</span></h2>
+            	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div></div>
+
+			
+				
+                
+                
+                
+           <div class="latest_newsslider">
+                
+                <ul id="flexiselDemo3">
+                
+                    <li>
+                    <div class="col-md-12">
+                    	<img src="images/latestnews_pics1.jpg" alt="">
+                        <span class="textareabox">
+                            	<h3>Center for Medical</h3>
+                                <p>1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                <a href="#" class="allbtn2">read more</a>
+                            </span>
+                        </div>
+                    </li>
+                    
+                    
+                    <li>
+                    <div class="col-md-12">
+                    	<img src="images/latestnews_pics2.jpg" alt="">
+                        <span class="textareabox">
+                            	<h3>Laboratary Test</h3>
+                                <p>1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                <a href="#" class="allbtn2">read more</a>
+                            </span>
+                        </div>
+                    </li>
+                    
+                    
+                    <li>
+                    <div class="col-md-12">
+                    	<img src="images/latestnews_pics3.jpg" alt="">
+                        <span class="textareabox">
+                            	<h3>Research Center</h3>
+                                <p>1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                <a href="#" class="allbtn2">read more</a>
+                            </span>
+                        </div>
+                    </li>
+
+                     <li>
+                    <div class="col-md-12">
+                    	<img src="images/latestnews_pics1.jpg" alt="">
+                        <span class="textareabox">
+                            	<h3>Center for Medical</h3>
+                                <p>1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                <a href="#" class="allbtn2">read more</a>
+                            </span>
+                        </div>
+                    </li>
+                    
+                    
+                    <li>
+                    <div class="col-md-12">
+                    	<img src="images/latestnews_pics2.jpg" alt="">
+                        <span class="textareabox">
+                            	<h3>Laboratary Test</h3>
+                                <p>1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                <a href="#" class="allbtn2">read more</a>
+                            </span>
+                        </div>
+                    </li>
+                    
+                    
+                    <li>
+                    <div class="col-md-12">
+                    	<img src="images/latestnews_pics3.jpg" alt="">
+                        <span class="textareabox">
+                            	<h3>Research Center</h3>
+                                <p>1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                                <a href="#" class="allbtn2">read more</a>
+                            </span>
+                        </div>
+                    </li>
+                   
+                    
+                </ul>    
+
+             </div>   
+                
+                
+                
+                
+                
+                
+
+
+
+      </div>
+    </div>
+</div>
+
+<!--===================================Footer Section===================================-->
+
+
+<footer>
+	<div class="container">
+    	<div class="row">
+        
+            <div class="col-md-3 col-sm-3 footer_secmain">
+            	<img src="images/footer_inhealth.png" alt="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+<br>
+<br>
+Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada. Lorem Ipsum has been the industry text ever since the 1500s</p>
+                
+            </div>
+            
+            <div class="col-md-3 col-sm-3 footer_tags footer_secmain">
+            	<h6>General Services</h6>
+                <ul>
+                	<li><a href="#">Employers</a></li>
+                    <li><a href="#">Health Plans</a></li>
+                    <li><a href="#">Health Systems</a></li>
+                    <li><a href="#">Providers</a></li>
+                    <li><a href="#">Health Service Center</a></li>
+                    <li><a href="#">Group Inquiry Form</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-3 col-sm-3 footer_tags footer_secmain">
+            	<h6>Telehealth Solutions</h6>
+                <ul>
+                	<li><a href="#">Executive Team</a></li>
+                    <li><a href="#">Board of Directors</a></li>
+                    <li><a href="#">Our Advisors</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-3 footer_secmain">
+            	<h6>Newsletter</h6>
+                  <div class="footer_contact">  
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="footer_newsletter">
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="70%" align="left" valign="middle">
+      <input type="text" name="textfield" id="textfield" class="footer_newsletter_form"  placeholder="Email Address">
+ </td>
+    <td width="30%" align="left" valign="middle"><input name="" type="image" src="images/footer-email.gif"></td>
+  </tr>
+</table>
+
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                <div class="footersection1_social">
+                	<big>STAY CONNECTED</big>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+
+                
+            </div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+<div class="footerbarbtm">
+	<div class="container">
+    	<div class="row">
+            <div class="col-md-6 col-sm-6">
+            	<p>Copyrights &copy; 2015 <span style="color:#ffffff;">InHealth</span>. All Rights Reserved</p>            </div>
+            <div class="col-md-6 col-sm-6 ">
+            	<ul>
+                    <li><a  href="#">Terms &amp; Conditions</a></li>
+                    <li><a  href="#">Contact</a></li>
+                    <li><a  href="#">Privacy</a></li>
+                </ul>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<a href="#" class="back-to-top"><img src="images/scrolltop.png" alt=""></a> 
+
+<script>            
+jQuery(document).ready(function() {
+	var offset = 220;
+	var duration = 500;
+	jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop() > offset) {
+			jQuery('.back-to-top').fadeIn(duration);
+		} else {
+			jQuery('.back-to-top').fadeOut(duration);
+		}
+	});
+	
+	jQuery('.back-to-top').click(function(event) {
+		event.preventDefault();
+		jQuery('html, body').animate({scrollTop: 0}, duration);
+		return false;
+	})
+});
+</script>
+
+<script src="js/jquery.responsiveTabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+$('#responsiveTabsDemo').responsiveTabs({
+startCollapsed: 'accordion'
+});
+</script>
+
+
+<script type="text/javascript" src="js/script.js"></script> 
+
+
+
+<script type="text/javascript">
+
+$(window).load(function() {
+    $("#flexiselDemo1").flexisel();
+    $("#flexiselDemo2").flexisel({
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 2
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 3
+            }
+        }
+    });
+    $("#flexiselDemo3").flexisel({
+        visibleItems: 3,
+        animationSpeed: 500,
+        autoPlay: false,
+        autoPlaySpeed: 3000,            
+        pauseOnHover: true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 1
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 2
+            }
+        }
+    });
+
+    $("#flexiselDemo4").flexisel({
+        clone:false
+    });
+    
+});
+</script>
+    
+
+
+<script src="js/selectbox.js"></script>
+<script>
+function showsearchpan(){
+	$('.searchField').toggle(300);
+};
+</script>
+
+</body>
+</html>

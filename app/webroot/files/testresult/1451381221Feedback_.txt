@@ -1,0 +1,26 @@
+We have a concern about recent changes in Google Guidelines which may be affecting ECE V2 and HM. 
+
+Here is our feedback: The Ajax crawling which was applied to allow content to be crawled in hidden section under 'Read More' button has been deprecated by Google as of October 2015. 
+
+Source: https://developers.google.com/webmasters/ajax-cr
+
+We can see that its already affecting the content below the 'Read More' buttons on every page. 
+
+Please can you get the team to do some R&D suggest a solution based on alternative or new technologies. If a new method cannot be found, please suggest what changes that can be made to the respective pages to allow content below the 'Read More' button do be crawled by Google.
+
+===========Reply[16th Dec 2015]===============
+//Regarding "Read More" issue, we are not using Ajax Crawling to show the hidden contents rather we are hiding them intially and when clicking on the "readmore" we are showing them. 
+
+//As we are not using Ajax Crawling so it will not affect or site(Both ECEV2 and HM).
+=========End Reply=============
+
+
+Feedback: We would like a better captcha code for this website. After doing some research, we have come across the following: 
+reCAPTCHA by Google. We found that there is an API for this. Here is the link: https://developers.google.com/recaptcha/intro?hl=en
+Please review the method suggested by Google Developers and apply the solution to this website.
+
+===========Reply[16th Dec 2015]===============
+//We have implemented "recaptcha" in both ECEV2( Both desktop and mobi Version ) and HM.
+
+//Time Spent to implement in all the above section: 7 MH
+=========End Reply=============
